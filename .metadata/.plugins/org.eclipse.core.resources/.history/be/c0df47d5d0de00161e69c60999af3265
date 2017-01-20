@@ -9,7 +9,7 @@ public class DiceRoll extends JFrame {
 	
 	public DiceRoll()
 	{
-		setSize(1000,1000);
+		setSize(500,500);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLayout(new FlowLayout());
 		JButton btn = new JButton("Roll");
