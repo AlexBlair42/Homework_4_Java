@@ -25,9 +25,9 @@ class Roll implements Runnable
 		
 		for(int i = num; i >= 1;i--)
 		{
-			int pickedNumber = rand.nextInt(6)+1;
+			int rnumber = rand.nextInt(6)+1;
 			
-			if (pickedNumber ==6)
+			if (rnumber ==6)
 			{
 			
 			Toolkit toolkit = Toolkit.getDefaultToolkit();
@@ -37,7 +37,7 @@ class Roll implements Runnable
 			ImageIcon icon = new ImageIcon(img);
 			Label.setIcon(icon);
 			}
-			else if (pickedNumber ==5)
+			else if (rnumber ==5)
 			{
 				Toolkit toolkit = Toolkit.getDefaultToolkit();
 				URL iu =getClass().getResource("/resource/five.png");
@@ -46,7 +46,7 @@ class Roll implements Runnable
 				ImageIcon icon = new ImageIcon(img);
 				Label.setIcon(icon);
 				}
-			else if (pickedNumber ==4)
+			else if (rnumber ==4)
 			{
 				Toolkit toolkit = Toolkit.getDefaultToolkit();
 				URL iu =getClass().getResource("/resource/four.png");
@@ -55,7 +55,7 @@ class Roll implements Runnable
 				ImageIcon icon = new ImageIcon(img);
 				Label.setIcon(icon);
 				}
-			else if (pickedNumber ==3)
+			else if (rnumber ==3)
 			{
 				Toolkit toolkit = Toolkit.getDefaultToolkit();
 				URL iu =getClass().getResource("/resource/three.jpg");
@@ -64,7 +64,7 @@ class Roll implements Runnable
 				ImageIcon icon = new ImageIcon(img);
 				Label.setIcon(icon);
 				}
-			else if (pickedNumber ==2)
+			else if (rnumber ==2)
 			{
 				Toolkit toolkit = Toolkit.getDefaultToolkit();
 				URL iu =getClass().getResource("/resource/two.png");
@@ -73,7 +73,7 @@ class Roll implements Runnable
 				ImageIcon icon = new ImageIcon(img);
 				Label.setIcon(icon);
 				}
-			else if (pickedNumber ==1)
+			else if (rnumber ==1)
 			{
 				Toolkit toolkit = Toolkit.getDefaultToolkit();
 				URL iu =getClass().getResource("/resource/one.png");
@@ -85,7 +85,7 @@ class Roll implements Runnable
 			
 			try
 			{
-				Thread.sleep(100);
+				Thread.sleep(150);
 			}catch(InterruptedException ex){;}
 		}
 	}

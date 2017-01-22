@@ -10,12 +10,12 @@ public class Scanner {
 	
 	public static void main (String[] args){
 		try{
-			String reddit = "https://www.reddit.com/";
-			Spider.put(reddit, false);
+			String news = "https://news.google.com/news/";
+			Spider.put(news, false);
 			String n = next();
 			while (n!= null)
 			{
-				URL url = new URL(reddit);
+				URL url = new URL(news);
 				BufferedReader rdr = new BufferedReader(new InputStreamReader(url.openStream()));
 				String line;
 				
@@ -33,7 +33,7 @@ public class Scanner {
 			
 		}catch (Exception ex)
 		{
-			System.out.printf("Ooops: %s", ex.getMessage());
+			System.out.printf("Error: %s", ex.getMessage());
 		}
 	}
 	private static String next()

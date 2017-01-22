@@ -14,11 +14,11 @@ public class DiceRoll extends JFrame {
 		setLayout(new FlowLayout());
 		JButton btn = new JButton("Roll");
 		this.add(btn);
-		Roll[] dr = new Roll[5];
+		Roll[] diceroll = new Roll[5];
 		for(int i = 0; i<5; i++)
 		{
 			JLabel one = new JLabel();
-			dr[i] = new Roll(one);
+			diceroll[i] = new Roll(one);
 			this.add(one);
 		}
 		this.setVisible(true);
