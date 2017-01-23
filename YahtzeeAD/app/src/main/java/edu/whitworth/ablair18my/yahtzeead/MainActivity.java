@@ -25,20 +25,23 @@ public class MainActivity extends AppCompatActivity {
                 int image[] = {R.drawable.one, R.drawable.two, R.drawable.three, R.drawable.four, R.drawable.five,R.drawable.six};
 
 
-                ImageView iv = (ImageView) findViewById(R.id.imageView);
-                iv.setImageResource(image[chosen]);
+                ImageView i1 = (ImageView) findViewById(R.id.imageView);
+                i1.setImageResource(image[chosen]);
                 chosen = random.nextInt(6);
-                ImageView iv2 = (ImageView) findViewById(R.id.imageView2);
-                iv2.setImageResource(image[chosen]);
+                ImageView i2 = (ImageView) findViewById(R.id.imageView2);
+                i2.setImageResource(image[chosen]);
                 chosen = random.nextInt(6);
-                ImageView iv3 = (ImageView) findViewById(R.id.imageView3);
-                iv3.setImageResource(image[chosen]);
+                ImageView i3 = (ImageView) findViewById(R.id.imageView3);
+                i3.setImageResource(image[chosen]);
                 chosen = random.nextInt(6);
-                ImageView iv4 = (ImageView) findViewById(R.id.imageView4);
-                iv4.setImageResource(image[chosen]);
+                ImageView i4 = (ImageView) findViewById(R.id.imageView4);
+                i4.setImageResource(image[chosen]);
                 chosen = random.nextInt(6);
-                ImageView iv5 = (ImageView) findViewById(R.id.imageView5);
-                iv5.setImageResource(image[chosen]);
+                ImageView i5 = (ImageView) findViewById(R.id.imageView5);
+                i5.setImageResource(image[chosen]);
+                chosen = random.nextInt(6);
+                ImageView i6 = (ImageView)findViewById(R.id.imageView6);
+                i6.setImageResource(image[chosen]);
 
                 try {
                     Thread.sleep(100);
