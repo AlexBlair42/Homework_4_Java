@@ -5,8 +5,15 @@ import javax.swing.*;
 import java.net.URL;
 import java.util.Random;
 
+/**
+ * This program replicates a Yahtzee dice roll.
+ * @author ablair18
+ * @version 1.0
+ */
 public class DiceRoll extends JFrame {
-	
+	/**
+	 * This constructor sets a frame and also adds a button to the frame. 
+	 */
 	public DiceRoll()
 	{
 		setSize(1000,1000);
@@ -24,6 +31,11 @@ public class DiceRoll extends JFrame {
 		this.setVisible(true);
 		btn.addActionListener(new ActionListener()
 		{
+			
+			/**
+			 * This function creates a new thread for each dice rolling on the screen. 
+			 * It also keeps track of if the button has been pressed. 
+			 */
 			public void actionPerformed(ActionEvent e)
 			{
 				for (int i = 0; i<5; i++)

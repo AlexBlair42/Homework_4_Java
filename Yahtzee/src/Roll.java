@@ -8,13 +8,19 @@ import javax.swing.JLabel;
 
 class Roll implements Runnable
 {
-	
+	/**
+	 * This sets a new JLabel for each dice picture. 
+	 */
 	private JLabel Label;
 	public Roll (JLabel label)
 	{
 		Label = label;
 		
 	}
+	/**
+	 * This function creates a random number from 1-6 and then loops through the numbers until the thread sleeps.
+	 * It also imports the images for each side of the die based on the stored images.
+	 */
 	public void run()
 	{
 		
